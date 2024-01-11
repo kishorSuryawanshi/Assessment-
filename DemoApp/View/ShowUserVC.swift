@@ -17,6 +17,7 @@ class ShowUserVC: UIViewController {
         self.setupTableView()
     }
     
+    // This function setup our employee data in tableview
     private func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -25,6 +26,8 @@ class ShowUserVC: UIViewController {
     }
 }
 
+
+// This extension create row to display employee data
 extension ShowUserVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.vModel.getEmployeeData().count

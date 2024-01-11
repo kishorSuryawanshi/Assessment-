@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         }
     }
     
+
+    // This Function bind viewcontroller to viewmodel
     func bindViewModel() {
         self.vModel.handleOnSuccess = {
             DispatchQueue.main.async {
@@ -54,6 +56,10 @@ class ViewController: UIViewController {
     }
 }
 
+
+/*
+  Add extension to viewcontroller
+*/
 extension ViewController: UITextFieldDelegate {
    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

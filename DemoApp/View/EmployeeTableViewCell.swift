@@ -17,6 +17,7 @@ class EmployeeTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    // This function set employee data to cell of tableview
     func configureCell(employee: Employee) {
         self.empName.text = employee.visaRequesterName
         self.empId.text = employee.employeeId
